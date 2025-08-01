@@ -42,7 +42,7 @@ export default function Header() {
             </>
           ) : (
             // Opção para usuário não logado
-            <Link href="/admin" passHref className="hover:text-gray-300">
+            <Link href="/admin/login" passHref className="hover:text-gray-300">
               Login
             </Link>
           )}

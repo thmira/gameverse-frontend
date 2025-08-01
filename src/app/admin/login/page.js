@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { loginAdmin } from '../services/api'; // Função para fazer o login
-import { setToken } from '../services/auth'; // Função para salvar o token
+import { loginAdmin } from '../../services/api'; // Função para fazer o login
+import { setToken } from '../../services/auth'; // Função para salvar o token
 
 export default function AdminLoginPage() {
   const [username, setUsername] = useState('');
