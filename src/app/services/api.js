@@ -29,3 +29,14 @@ export const getPostById = async (id) => {
     return null;
   }
 };
+
+// Nova função para fazer login
+export const loginAdmin = async (username, password) => {
+  try {
+    const response = await api.post('/users/login', { username, password });
+    return response.data;
+  } catch (error) {
+    // Lança o erro para ser tratado no componente de login
+    throw new Error(error.response?.data?.message || 'Erro desconhecido ao fazer login');
+  }
+};
